@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "ProxFind \u2013 Proximity Text Search",
+  "version": "1.0.0",
+  "description": "Find places on a page where your search terms occur near each other. Highlights matches and lists context snippets.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "ProxFind",
+    "default_popup": "popup.html"
+  },
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "file://*/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "css": [
+        "contentStyles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

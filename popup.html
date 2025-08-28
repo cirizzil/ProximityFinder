@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ProxFind</title>
+  <link rel="stylesheet" href="popup.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>ProxFind</h1>
+    <p class="sub">Proximity text search on the current page</p>
+  </header>
+
+  <section class="controls">
+    <label>Terms (comma-separated)</label>
+    <input id="terms" placeholder="e.g., Chris, BVA" />
+
+    <div class="row">
+      <label class="shrink">Max words between</label>
+      <input id="maxWords" type="number" min="0" step="1" value="10" class="num" />
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="wholeWord" checked /> Whole words</label>
+      <label><input type="checkbox" id="caseSensitive" /> Case sensitive</label>
+      <label><input type="checkbox" id="orderMatters" /> Order matters</label>
+      <label><input type="checkbox" id="highlight" checked /> Highlight matches</label>
+      <label><input type="checkbox" id="sameBlock" checked /> Same block/paragraph only</label>
+    </div>
+
+    <div class="buttons">
+      <button id="searchBtn">Search</button>
+      <button id="clearBtn" class="ghost">Clear</button>
+    </div>
+  </section>
+
+  <section id="results" class="results">
+    <div class="empty">Results will appear here.</div>
+  </section>
+
+  <footer>
+    <a href="#" id="saveDefaults">Save these as defaults</a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
