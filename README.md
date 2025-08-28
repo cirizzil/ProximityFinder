@@ -1,4 +1,5 @@
 # ProxFind – Proximity Text Search (Chrome Extension)
+<img width="2558" height="1314" alt="image" src="https://github.com/user-attachments/assets/2c1509b6-3aa5-49a4-b5df-7739914ede3b" />
 
 ## What it is
 ProxFind helps you **find where multiple terms occur near each other** on a web page or in supported PDF viewers.  
